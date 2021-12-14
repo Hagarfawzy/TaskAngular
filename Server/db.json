@@ -1,0 +1,58 @@
+{
+  "Users": [
+    {
+      "name": "Hagar",
+      "email": "hajora@gmail.com",
+      "Address": {
+        "city": "Nasr city",
+        "street": "St.1"
+      },
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Rakan",
+      "email": "koko@gmail.com",
+      "Address": {
+        "city": "Maadi",
+        "street": "St.2"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Berehan",
+      "email": "beri@gmail.com",
+      "Address": {
+        "city": "Nasr",
+        "street": "St.3"
+      }
+    },
+    {
+      "name": "Mohamed",
+      "email": "dodo@gmail.com",
+      "Address": {
+        "city": "Maadi",
+        "street": "St.4"
+      },
+      "id": 4
+    },
+    {
+      "name": "Abrar",
+      "email": "bella@gmail.com",
+      "Address": {
+        "city": "Masr elgdida",
+        "street": "St.5"
+      },
+      "id": 5
+    },
+    {
+      "name": "Souzy",
+      "email": "Souzy@gamil.com",
+      "Address": {
+        "city": "Mansoura",
+        "street": "St.7"
+      },
+      "id": 6
+    }
+  ]
+}

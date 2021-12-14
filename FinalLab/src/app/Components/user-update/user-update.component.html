@@ -1,0 +1,25 @@
+<form *ngIf="user" style="width: 30%; margin: 3rem auto; padding: 1rem; background-color: bisque; border: 3px solid blueviolet; border-radius: 2rem;" class="form text-center">
+  <div class="form-group">
+    <label style="color: blueviolet; font-weight: bold;" for="name">ID :  {{user.id}}</label>
+  </div>
+  <div class="form-group">
+    <label style="color: blueviolet; font-weight: bold;" for="name">Name</label>
+    <input #name id="name" type="text" class="form-control" value="{{user.name}}">
+  </div>
+  <div class="form-group">
+    <label style="color: blueviolet; font-weight: bold;" for="email">Email</label>
+    <input #email id="email" type="text" class="form-control" value="{{user.email}}">
+  </div>
+  <div class="form-group">
+    <label style="color: blueviolet; font-weight: bold;" for="city">City</label>
+    <input #city id="city" type="text" class="form-control" value="{{user.Address.city}}">
+  </div>
+  <div class="form-group">
+    <label style="color: blueviolet; font-weight: bold;" for="street">Street</label>
+    <input #street id="street" type="text" class="form-control" value="{{user.Address.street}}">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-info" (click)="Update(user.id ,name.value, email.value, city.value, street.value)">Update</button>
+    <!-- <input type="submit" value="Update" class="btn" style="background-color: blueviolet; color: #fff;"> -->
+  </div>
+</form>

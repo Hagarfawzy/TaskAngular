@@ -1,0 +1,27 @@
+
+<h3 style="color: #17a2b8; text-align: center; margin-top: 1rem;">Welcome  {{user.name}} :)</h3>
+
+<table class="table table-hover" *ngIf="user;else NoData" style="margin: 2rem auto; width: 70%;">
+  <thead>
+    <tr style="background-color: #17a2b8; color: #fff;">
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>City</th>
+      <th>Street</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>{{user.id}}</th>
+      <th>{{user.name}}</th>
+      <th>{{user.email}}</th>
+      <th>{{user.Address.city}}</th>
+      <th>{{user.Address.street}}</th>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #NoData>
+<h1>No Dataaaaaaaaaaa</h1>
+</ng-template>

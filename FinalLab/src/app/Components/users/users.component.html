@@ -1,0 +1,34 @@
+<div class="text-center">
+<a class="btn btn-outline-secondary p-3 m-3" routerLink="/users">Users</a>
+<a class="btn btn-outline-warning p-3 m-3" routerLink="/newuser">Add New User</a>
+<a class="btn btn-outline-danger p-3 m-3" routerLink="/**">Error</a>
+</div>
+
+<!-- <app-user-item class="text-center"></app-user-item> -->
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr style="background-color: #17a2b8">
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>City</th>
+      <th>Street</th>
+      <th>Details</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.Address.city}}</td>
+      <td>{{user.Address.street}}</td>
+      <td><a routerLink="{{user.id}}" class="btn btn-secondary">Details</a></td>
+      <td><a routerLink="/update/{{user.id}}" class="btn btn-warning">Update</a></td>
+      <td><a routerLink="/users" class="btn btn-danger" (click)="delFunc(user.id)">Delete</a></td>
+    </tr>
+  </tbody>
+</table>
+
